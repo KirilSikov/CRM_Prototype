@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConPgController">
+   <children>
+      <AnchorPane prefHeight="418.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="482.0" layoutY="335.0" mnemonicParsing="false" onAction="#exitPage" text="Back To Main" />
+            <TableView fx:id="taskList" layoutX="142.0" layoutY="100.0" prefHeight="200.0" prefWidth="419.0">
+              <columns>
+                <TableColumn fx:id="tasks" prefWidth="418.40001220703124" text="History" />
+              </columns>
+            </TableView>
+            <Button layoutX="500.0" layoutY="42.0" mnemonicParsing="false" onAction="#createTask" text="Create Task" />
+            <TextArea editable="false" layoutX="14.0" layoutY="18.0" prefHeight="346.0" prefWidth="122.0" text="&#10;&#10;&#10;&#10;&#10;&#10;&#10;        John Doe&#10;&#10;Email: John@email.com&#10;Tel: (123)-456-7890&#10;Address: 1 Bakersfield S&#10;Tampa&#10;Status: Pre-production">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            <Button layoutX="142.0" layoutY="42.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete Task" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
